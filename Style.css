@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Univarsal Style */
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --bg-color: #060044;
+    --second-bg-color: rgb(34, 34, 34);
+    --btn-bg-color:rgb(230, 83, 60);
+    --text-color: rgb(255, 255, 255);
+    --text-second-color: rgba(255, 255, 255, 0.5);;
+    --font-main: "Inter", sans-serif;
+  }
+
+/* common Style  */
+.frameStyle{
+ width: 100%;
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 3rem 0rem;
+}
+
+/* Desktop-First Media Queries */
+/* Devices from 993px to 1200px */
+@media (max-width: 1200px) {
+	
+	
+}
+/* Devices from 576px to 992px*/
+@media (max-width: 992px) {	
+	
+}
+ /* Devices from 0px to 576px */
+@media (max-width: 576px) {
+	
+	
+}
