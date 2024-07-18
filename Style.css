@@ -1,48 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Parisienne&family=Sevillana&display=swap');
 
 /* Univarsal Style */
 * {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-  }
-
-  :root {
-    --bg-color: #060044;
-    --second-bg-color: rgb(34, 34, 34);
-    --btn-bg-color:rgb(230, 83, 60);
-    --text-color: rgb(255, 255, 255);
-    --text-second-color: rgba(255, 255, 255, 0.5);;
-    --font-main: "Inter", sans-serif;
-  }
-
-/* common Style  */
-.frameStyle{
- width: 100%;
- min-height: 100vh;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 3rem 0rem;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 
+:root {
+  --main-bg-color: rgb(17, 17, 17);
+  --bg-color: rgb(185, 185, 185);
+  --second-bg-color: rgb(34, 34, 34);
+  --btn-bg-color: rgb(230, 83, 60);
+  --text-color: rgb(255, 255, 255);
+  --text-second-color: rgba(255, 255, 255, 0.5);
+  --font-main: "Inter", sans-serif;
+}
+
+/* common Style  */
+.btn{
+  border-radius: 42px;
+background: var(--btn-bg-color);
+color: var(--text-color);
+font-family: var(--font-main);
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+padding: 16px 40px;
+cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.para_text{
+  color: var(--text-second-color);
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left; 
+  margin-top: 5px;
+}
+/* style  */
+#header {
+  background: rgb(17, 17, 17);
+  width: 100%;
+  min-height: 120px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.header_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.brand_name {
+  color: var(--btn-bg-color);
+  font-family: var(--font-main);
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 120%;
+}
+.nav_item {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+}
+.nav_item li {
+  padding: 8px 20px;
+  list-style: none;
+}
+.nav_item li a {
+  padding: 8px 20px;
+  list-style: none;
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.btnHome {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+}
+/* Hero Section */
+.hero {
+  background: linear-gradient(
+    0deg,
+    rgb(17, 17, 17),
+    rgba(12, 12, 12, 0.911) 100%
+  ) ;
+  width: 100%;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 3rem 0rem;
+  
+}
+.hero_div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero_text_div{
+  width: 520px;
+}
+.hero_text_div h1{
+  color: var(--text-color);
+font-family: var(--font-main);
+font-size: 78px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+.hero_text_div p{
+  margin: 28px 0px;
+}
+.hero_font_style{
+  /* font-style: var(--font-main); */
+    font-size: 7rem; 
+    font-style:italic; 
+    text-transform: lowercase; 
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn-download{
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--text-color);
+  margin-left: 15px;
+}
+.hero_img_div{
+  position: relative;
+}
+.hero_Workout_videos_div{
+  position: absolute;
+  color: var(--text-color);
+  right: -70px;
+  top: 125px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0.089);
+padding: 17px 24px;
+}
+.hero_Workout_videos_div h2{
+font-size: 40px;
+font-weight: 900;
+line-height: 40px;
+letter-spacing: 1px;
+text-align: left;
+}
+.hero_videos_tutorial_div{
+  position: absolute;
+  color: var(--text-color);
+  left: -90px;
+  bottom: 90px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(255, 255, 255, 0);
+padding: 17px 24px;
+display: flex;
+gap: 8px;
+align-items: center;
+}
+.hero_videos_tutorial_round_div{
+  width: 35px;
+  height: 35px;
+  background: var(--btn-bg-color);
+  border-radius: 50%;
+}
+.hero_videos_tutorial_text_div h2{
+  color: rgb(250, 250, 249);
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
 /* Desktop-First Media Queries */
 /* Devices from 993px to 1200px */
 @media (max-width: 1200px) {
-	
-	
+  .hero_text_div {
+    width: 370px;
 }
-/* Devices from 576px to 992px*/
-@media (max-width: 992px) {	
-	
+.hero_text_div h1 {
+  font-size: 55px;
+  line-height: 147%;
 }
- /* Devices from 0px to 576px */
+.para_text {
+  font-size: 13px;
+  line-height: 20px;
+}
+.btn-download{
+  margin-top: 15px;
+  margin-left: 0px;
+}
+  .hero_Workout_videos_div{
+    position: absolute;
+    right: -40px;
+    top: 125px;
+  }
+  .hero_videos_tutorial_div{
+    position: absolute;
+    left: -70px;
+    bottom: 90px;
+  }
+}
+/* Devices from 577px to 992px*/
+@media (max-width: 992px) {
+}
+/* Devices from 0px to 576px */
 @media (max-width: 576px) {
-	
-	
+  .header_nav{
+    justify-content: space-between;
+    padding:0px 20px
+  }
+  .nav_item{
+    display: none;
+  }
+  .bars{
+    color: var(--text-color);
+    font-size: 32px;
+  }
+  .hero_div{
+    display: block;
+    padding: 0px 20px;
+  }
+  .hero_text_div{
+    width: 80%;
+  }
+  .btn-download{
+    margin-top: 15px;
+    margin-left: 10px;
+  }
 }
