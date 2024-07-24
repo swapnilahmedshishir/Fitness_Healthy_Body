@@ -197,7 +197,7 @@
   background-color: var(--main-bg-color);
   width: 100%;
   min-height: 50vh;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 3rem 0rem;
 }
 
